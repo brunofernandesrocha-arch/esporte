@@ -1,0 +1,539 @@
+```css
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f5;
+    color: #17211d;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.cabecalho {
+    width: 100%;
+    background: #101914;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #26352d;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 75px;
+    padding: 0 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d6f20b;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            110deg,
+            #101914 0%,
+            #183b2a 55%,
+            #276b45 100%
+        );
+
+    color: white;
+    padding: 80px 25px;
+}
+
+.hero-conteudo {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: #d6f20b;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d6f20b;
+    display: block;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 19px;
+    color: #e0e9e4;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+
+    background: #d6f20b;
+    color: #101914;
+
+    padding: 15px 25px;
+    border-radius: 8px;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================================
+   SEÇÕES
+================================ */
+
+.secao {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-secao > span,
+.sobre-conteudo > span {
+    color: #2c8b55;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.titulo-secao p {
+    color: #68746e;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.card {
+    position: relative;
+
+    background: #ffffff;
+    border: 1px solid #e0e7e3;
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 25px rgba(16, 25, 20, 0.07);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(16, 25, 20, 0.13);
+}
+
+.card-icone {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.futebol {
+    background: #e9f7ee;
+}
+
+.basquete {
+    background: #fff0df;
+}
+
+.volei {
+    background: #e9f3ff;
+}
+
+.formula {
+    background: #f2eafa;
+}
+
+.numero {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    color: #a5b0aa;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #68746e;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #22814c;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.card a:hover {
+    color: #101914;
+}
+
+
+/* ================================
+   DESTAQUES
+================================ */
+
+.destaques {
+    background: #101914;
+    color: white;
+    padding: 90px 25px;
+}
+
+.destaques .titulo-secao h2 {
+    color: white;
+}
+
+.destaques .titulo-secao > span {
+    color: #d6f20b;
+}
+
+.destaques-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destaque {
+    background: #1a2921;
+    border: 1px solid #2b4034;
+
+    padding: 35px;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.destaque:hover {
+    transform: translateY(-6px);
+    border-color: #d6f20b;
+}
+
+.destaque-icone {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.destaque h3 {
+    color: #d6f20b;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.destaque p {
+    color: #c5d0ca;
+}
+
+
+/* ================================
+   TABELA
+================================ */
+
+.tabela-secao {
+    padding-bottom: 100px;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(16, 25, 20, 0.07);
+}
+
+th {
+    background: #176b43;
+    color: white;
+    padding: 18px;
+    text-align: left;
+}
+
+td {
+    padding: 18px;
+    border-bottom: 1px solid #e5e9e7;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: #f0f8f3;
+}
+
+
+/* ================================
+   SOBRE
+================================ */
+
+.sobre {
+    background: #e5f0e9;
+    padding: 90px 25px;
+}
+
+.sobre-conteudo {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 40px;
+    margin: 12px 0 25px;
+}
+
+.sobre h2 strong {
+    color: #22814c;
+}
+
+.sobre p {
+    color: #536159;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   RODAPÉ
+================================ */
+
+footer {
+    background: #0b100d;
+    color: white;
+    padding: 50px 25px 20px;
+}
+
+.footer-conteudo {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-conteudo h2 {
+    margin-bottom: 8px;
+}
+
+.footer-conteudo p {
+    color: #9aa79f;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d6f20b;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: 40px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #253029;
+
+    text-align: center;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destaques-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 25px;
+    }
+
+    .menu {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 30px;
+    }
+
+    .sobre h2 {
+        font-size: 30px;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
+```
